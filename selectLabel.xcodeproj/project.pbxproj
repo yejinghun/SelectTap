@@ -15,6 +15,7 @@
 		A76DA19F1F2B02BF00D73E6B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A76DA19D1F2B02BF00D73E6B /* LaunchScreen.storyboard */; };
 		A76DA1AA1F2B02BF00D73E6B /* selectLabelTests.m in Sources */ = {isa = PBXBuildFile; fileRef = A76DA1A91F2B02BF00D73E6B /* selectLabelTests.m */; };
 		A76DA1B51F2B02BF00D73E6B /* selectLabelUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = A76DA1B41F2B02BF00D73E6B /* selectLabelUITests.m */; };
+		A76DA1C41F2B03A700D73E6B /* selectLabelView.m in Sources */ = {isa = PBXBuildFile; fileRef = A76DA1C31F2B03A700D73E6B /* selectLabelView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +52,9 @@
 		A76DA1B01F2B02BF00D73E6B /* selectLabelUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = selectLabelUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A76DA1B41F2B02BF00D73E6B /* selectLabelUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = selectLabelUITests.m; sourceTree = "<group>"; };
 		A76DA1B61F2B02BF00D73E6B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A76DA1C21F2B03A700D73E6B /* selectLabelView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = selectLabelView.h; sourceTree = "<group>"; };
+		A76DA1C31F2B03A700D73E6B /* selectLabelView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = selectLabelView.m; sourceTree = "<group>"; };
+		A76DA1C51F2B070700D73E6B /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -105,6 +109,9 @@
 				A76DA1931F2B02BE00D73E6B /* AppDelegate.m */,
 				A76DA1951F2B02BE00D73E6B /* ViewController.h */,
 				A76DA1961F2B02BE00D73E6B /* ViewController.m */,
+				A76DA1C21F2B03A700D73E6B /* selectLabelView.h */,
+				A76DA1C31F2B03A700D73E6B /* selectLabelView.m */,
+				A76DA1C51F2B070700D73E6B /* PrefixHeader.pch */,
 				A76DA1981F2B02BF00D73E6B /* Main.storyboard */,
 				A76DA19B1F2B02BF00D73E6B /* Assets.xcassets */,
 				A76DA19D1F2B02BF00D73E6B /* LaunchScreen.storyboard */,
@@ -207,7 +214,7 @@
 				TargetAttributes = {
 					A76DA18B1F2B02BE00D73E6B = {
 						CreatedOnToolsVersion = 8.3.2;
-						DevelopmentTeam = 5X7465SCMN;
+						DevelopmentTeam = 385QD4S68T;
 						ProvisioningStyle = Automatic;
 					};
 					A76DA1A41F2B02BF00D73E6B = {
@@ -279,6 +286,7 @@
 				A76DA1971F2B02BE00D73E6B /* ViewController.m in Sources */,
 				A76DA1941F2B02BE00D73E6B /* AppDelegate.m in Sources */,
 				A76DA1911F2B02BE00D73E6B /* main.m in Sources */,
+				A76DA1C41F2B03A700D73E6B /* selectLabelView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -429,7 +437,8 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = 5X7465SCMN;
+				DEVELOPMENT_TEAM = 385QD4S68T;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/selectLabel/PrefixHeader.pch";
 				INFOPLIST_FILE = selectLabel/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = Fmz.selectLabel;
@@ -441,7 +450,8 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = 5X7465SCMN;
+				DEVELOPMENT_TEAM = 385QD4S68T;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/selectLabel/PrefixHeader.pch";
 				INFOPLIST_FILE = selectLabel/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = Fmz.selectLabel;
@@ -518,6 +528,7 @@
 				A76DA1BB1F2B02BF00D73E6B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		A76DA1BC1F2B02BF00D73E6B /* Build configuration list for PBXNativeTarget "selectLabelTests" */ = {
 			isa = XCConfigurationList;
@@ -526,6 +537,7 @@
 				A76DA1BE1F2B02BF00D73E6B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		A76DA1BF1F2B02BF00D73E6B /* Build configuration list for PBXNativeTarget "selectLabelUITests" */ = {
 			isa = XCConfigurationList;
@@ -534,6 +546,7 @@
 				A76DA1C11F2B02BF00D73E6B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
